@@ -40,13 +40,15 @@ function ViewModel() {
 		self.markers().forEach(function (marker, i) {
 		    marker.setMap(null);
 		});
-		self.markers.removeAll();
 	};
 
 	// Update markers which may belong query
 	self.updateMarkers = function(filterLocations) {
 		filterLocations.forEach(function (location) {
-			location.marker = new google.maps.Marker({
+			
+			if(!location.marker){
+
+				location.marker = new google.maps.Marker({
 		        map: self.map,
 		        position: location.coordinates,
 		        animation: null
@@ -55,8 +57,11 @@ function ViewModel() {
 		    location.marker.addListener('click', function() {
 	    		self.selectedLocation(location);
 	    	});
+			} else {
+				location.marker.setMap(self.map);
+			}
 
-		   	self.markers().push(location.marker);
+		  self.markers().push(location.marker);
 
 		});
 	};
