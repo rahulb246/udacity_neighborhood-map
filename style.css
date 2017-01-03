@@ -79,7 +79,7 @@ li:hover {
 
 @media (max-width: 768px) {
 	.map-container {
-		height: 70%;
+		height: 100%;
 	}
 	.list-container {
 		height: 30%;

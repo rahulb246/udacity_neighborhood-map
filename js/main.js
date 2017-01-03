@@ -130,6 +130,10 @@ function ViewModel() {
 			    	location.wiki = response[2][0];
 			    	location.infoWindow.setContent(self.getHTML(location));
 		    	}
+					else {
+						location.wiki = "No wikipedia info found for this stadium";
+			    	location.infoWindow.setContent(self.getHTML(location));
+					}
 		    },
 		    timeout: 10000,
 		    error: function() {

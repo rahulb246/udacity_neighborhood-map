@@ -14,7 +14,7 @@
 			<div class="content">
 				<section class="list-container remove_padding col-sm-3">
 					<div id="list">
-						<input data-bind="textInput: query, event: {input: updateList}" type="text" placeholder="Search"></input>
+						<input data-bind="textInput: query, event: {input: updateList}" type="text" placeholder="Search">
 						<ul data-bind="foreach: results">
 							<li data-bind="text: stadium_name, click: $parent.selectedLocation.bind($data)"></li>
 						</ul>
@@ -31,6 +31,6 @@
 	<script src="js/knockout-3.4.1.js"></script>
 	<script src="js/data.js"></script>
 	<script src="js/main.js"></script>
-	<script async src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initialize onerror="googleAPIError()"></script>
+	<script async src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initialize" onerror="googleAPIError()"></script>
 </body>
 </html>

@@ -22,13 +22,6 @@ var data = [
         }
 	},
 	{
-        stadium_name: "M Chinnaswamy Stadium",
-        coordinates: {
-            lat: 12.97883,
-            lng: 77.599615
-        }
-	},
-	{
         stadium_name: "Rajiv Gandhi International Cricket Stadium",
         coordinates: {
             lat: 17.406521,
@@ -40,27 +33,6 @@ var data = [
         coordinates: {
             lat: 26.4822,
             lng: 80.3477
-        }
-	},
-	{
-        stadium_name: "MA Chidambaram Stadium",
-        coordinates: {
-            lat: 13.062808,
-            lng: 80.27928
-        }
-	},
-	{
-        stadium_name: "ACA VDCA Cricket Stadium",
-        coordinates: {
-            lat: 17.797498,
-            lng: 83.352216
-        }
-	},
-	{
-        stadium_name: "VCA Stadium",
-        coordinates: {
-            lat: 21.0135,
-            lng: 79.0396
         }
 	},
 	{
